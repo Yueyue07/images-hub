@@ -1,0 +1,31 @@
+{
+  "name": "images-hub",
+  "version": "1.0.0",
+  "description": "This is the website to input and display your favorite images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yueyue07/images-hub.git"
+  },
+  "author": "Yueyue Qin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yueyue07/images-hub/issues"
+  },
+  "homepage": "https://github.com/Yueyue07/images-hub#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^5.5.4",
+    "mongoose": "^4.3.6"
+ },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-http": "^1.0.0",
+    "mocha": "^2.3.4"
+  }
+}
