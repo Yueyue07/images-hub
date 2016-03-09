@@ -1,0 +1,13 @@
+$colormain: #f7772c;
+$fontcolor: white;
+$backgroundcolor:#2677bb;
+
+.navbar-inverse {
+  background-color:  $colormain;
+  .navbar-brand {
+    color: $fontcolor;
+  }
+  .navbar-nav >li > a {
+    color: $fontcolor;
+  }
+}
