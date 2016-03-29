@@ -11,3 +11,13 @@ $backgroundcolor:#2677bb;
     color: $fontcolor;
   }
 }
+
+.new-image {
+  input {
+    display: block;
+    margin-top:1.5rem;
+  }
+  button {
+    margin-top: 1.5rem;
+  }  
+}
