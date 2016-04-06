@@ -2,9 +2,9 @@
   "name": "images-hub",
   "version": "1.0.0",
   "description": "This is the website to input and display your favorite images",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start":"node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,30 +25,9 @@
     "mongoose": "^4.3.6"
   },
   "devDependencies": {
-    "angular": "^1.5.0",
-    "angular-mocks": "^1.5.0",
-    "angular-route": "^1.5.0",
-    "angular-ui-router": "^0.2.18",
-    "babel-core": "^6.5.2",
-    "babel-loader": "^6.2.2",
-    "chai": "^3.5.0",
+    "babel-eslint": "^6.0.2",
+    "chai": "^3.4.1",
     "chai-http": "^1.0.0",
-    "eslint": "^2.1.0",
-    "eslint-plugin-angular": "^0.15.0",
-    "gulp": "^3.9.1",
-    "gulp-eslint": "^2.0.0",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "html-loader": "^0.4.3",
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.21",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-firefox-launcher": "^0.1.7",
-    "karma-jasmine": "^0.3.7",
-    "mocha": "^2.4.5",
-    "phantomjs-prebuilt": "^2.1.4",
-    "webpack": "^1.12.13",
-    "webpack-stream": "^3.1.0"
+    "mocha": "^2.3.4"
   }
 }

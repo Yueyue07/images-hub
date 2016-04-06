@@ -12,7 +12,6 @@ module.exports = function(app) {
     };
 
     $scope.create = function(image) {
-      console.log(image)
       imageResource.create(image, function(err, res) {
         if(err) return console.log(err);
         $scope.images.push(res);

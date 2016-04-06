@@ -16,23 +16,23 @@ module.exports = function(app) {
       this.ResourceName = ResourceName;
     };
     Resource.prototype.getAll = function(callback) {
-      $http.get('http://localhost:3000/api' + this.ResourceName)
+      $http.get('/api' + this.ResourceName)
         .then(handleSuccess(callback), handleFailure(callback));
     };
 
     Resource.prototype.create = function(data, callback) {
-      $http.post('http://localhost:3000/api' + this.ResourceName, data)
+      $http.post('/api' + this.ResourceName, data)
         .then(handleSuccess(callback), handleFailure(callback));
     };
 
     Resource.prototype.update = function(data, callback) {
-      $http.put('http://localhost:3000/api' + this.ResourceName
+      $http.put('/api' + this.ResourceName
         + '/' + data._id, data)
           .then(handleSuccess(callback), handleFailure(callback));
     };
 
     Resource.prototype.delete = function(data, callback) {
-      $http.delete('http://localhost:3000/api' + this.ResourceName
+      $http.delete('/api' + this.ResourceName
         + '/' + data._id)
           .then(handleSuccess(callback), handleFailure(callback));
     };
