@@ -1,9 +1,10 @@
 const angular = require('angular');
 require('angular-route');
+require('angular-ui-route');
 const imageApp = angular.module('imageApp', ['ngRoute']);
 
 require(__dirname + '/image')(imageApp);
-
+require(__dirname + '/services')(imageApp);
 
 imageApp.config(['$routeProvider', function(routes) {
   routes
