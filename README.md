@@ -1,2 +1,3 @@
 # images-hub
-This is the website to input and display your favorite images
+This is the website to allow users to save their favorite images by images' address
+
