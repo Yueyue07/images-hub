@@ -2,7 +2,7 @@
   <section>
     <h1>Create New Image</h1>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <form data-ng-submit="create(newimage)" class="new-image">
           <input type="text" data-ng-model="newimage.name" class="form-control" placeholder="name">
           <input type="text" data-ng-model="newimage.url" class="form-control" placeholder="image url">
@@ -11,17 +11,19 @@
           <button type="submit" class="btn btn-default">New Image</button>
         </form>
       </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-7">
-            <div style="width:300; height:300; overflow:hidden;">
-              <img class="img-responsive" src={{newimage.url}}>
+      <div class="col-md-4 col-md-offset-4">
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card">
+                <div style="width:318px; height:180px; overflow:hidden;">
+                  <img class="card-img-top img-responsive" src={{newimage.url}} alt="your image">
+                </div>
+              <div class="card-block">
+                <h4 class="card-title"><strong>{{newimage.name}}</strong></h4>
+                <p class="card-text">{{newimage.description}}</p>
+                <p class="card-text"><small class="text-muted">{{newimage.date}}</small></p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-5">
-            <h4>{{newimage.name}}&nbsp;&nbsp;&nbsp;</h4>
-             <p><em>{{newimage.date}}</em></p>
-            <p>{{newimage.description}}</p>
           </div>
         </div>
       </div>
@@ -32,13 +34,12 @@
     <h1>Image List</h1>
     <div data-ng-repeat = "image in images">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div style="width:300px; height:200px; overflow:hidden;">
             <img class="img-responsive" src={{image.url}}>
           </div>
-          <!-- <img class="img-responsive" src={{image.url}} width="300" height="300"> -->
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <h3>Title:&nbsp;&nbsp; {{image.name}}&nbsp;&nbsp;&nbsp;</h3>
           <p>Date:&nbsp;&nbsp; <em>{{image.date}}</em></p>
           <p>Description:&nbsp;&nbsp; {{image.description}}</p>
